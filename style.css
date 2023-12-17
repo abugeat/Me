@@ -1,0 +1,91 @@
+@font-face {
+    font-family: OpenSans; 
+    src: url('../assets/OpenSans.ttf'); 
+} 
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.7em;
+    }
+}
+
+body {
+    font-family: OpenSans;
+    /* margin: 20px; */
+    max-width: 40em;
+    /* make body centered */
+    margin: 1em auto;
+    /* font-size: 0.9rem; */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+}
+header p {
+    margin: 0;
+    /* font-size: 1.2rem; */
+    font-weight: 300;
+    font-style: italic
+}
+
+
+  
+#profilepic {
+    max-width: 150px; /* Adjust the max width of the profile picture */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Adjust the margin between the image and text */
+}
+
+h1 {
+    color: black;
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+h2 {
+    color: black;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+h3 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: black;
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+section {
+    border-left: 1px solid black;
+    padding-left: 1em;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+
+.skill {
+    display: inline-block;
+    color: white;
+    background-color: blue;
+    border-radius: 100rem;
+    padding: 5px 10px;
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+img {
+    max-width: 100%;
+}
