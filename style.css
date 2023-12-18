@@ -22,14 +22,15 @@ body {
     font-family: 'OpenSans', sans-serif;
     /* margin: 20px; */
     max-width: 45em;
-    margin: 1em auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
     display: flex;
     align-items: center;
     padding: 20px;
-    height:50vh; 
+    height: 40vh; 
 }
 header p {
     margin: 0;
@@ -94,7 +95,7 @@ section {
     padding-left: 1em;
     margin-top: 7em;
     margin-left: 1em;
-    padding-right:1em;
+    padding-right: 1em;
 }
 
 .skill {
@@ -125,14 +126,12 @@ a {
   
 a:hover {
     text-decoration: underline; 
-    color: #004466; /* Change color on hover */
+    color: #004466;
 }
 
 #navtop {
     display: flex;
     justify-content: space-evenly;
-    align-items : stretch;
-    width: 100%;
 }
 #navtop > * {
     flex: 1; 
@@ -142,13 +141,9 @@ a:hover {
     background-color: #f2f2f2;
     border-radius: 0.5em;
     align-items: center;
-    	/* Use a flexbox layout */
+
 	display: flex;
-	
-	/* Make a horizontal flexbox (the default) */
 	flex-direction: row;
-	
-	/* The important part: vertically center the items */
 	align-items: center;
     justify-content: center;
 }
