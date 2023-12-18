@@ -142,9 +142,18 @@ a:hover {
     background-color: #f2f2f2;
     border-radius: 0.5em;
     align-items: center;
+    	/* Use a flexbox layout */
+	display: flex;
+	
+	/* Make a horizontal flexbox (the default) */
+	flex-direction: row;
+	
+	/* The important part: vertically center the items */
+	align-items: center;
+    justify-content: center;
 }
 
-#nav > *:hover {
+#navtop > *:hover {
     background-color: #e6e6e6;
     text-decoration: none; 
 }
