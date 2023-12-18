@@ -2,26 +2,34 @@
     font-family: 'OpenSans'; 
     src: url('../Me/assets/OpenSans.ttf') format('truetype'); 
 } 
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); */
+
+@font-face {
+    font-family: 'OpenSans'; 
+    src: url('assets/OpenSans.ttf') format('truetype'); 
+} 
+
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
+}
+
+#home{
+    height:100vh;
 }
 
 body {
     font-family: 'OpenSans', sans-serif;
     /* margin: 20px; */
-    max-width: 40em;
-    /* make body centered */
+    max-width: 45em;
     margin: 1em auto;
-    /* font-size: 0.9rem; */
 }
 
 header {
     display: flex;
     align-items: center;
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px;
+    height:50vh; 
 }
 header p {
     margin: 0;
@@ -33,9 +41,9 @@ header p {
 
   
 #profilepic {
-    max-width: 150px; /* Adjust the max width of the profile picture */
-    border-radius: 50%; /* Make the image circular */
-    margin-right: 20px; /* Adjust the margin between the image and text */
+    max-width: 9em;
+    border-radius: 50%; 
+    margin-right: 20px; 
 }
 
 h1 {
@@ -48,12 +56,23 @@ h1 {
 h2 {
     color: black;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+    /* border: 1px solid black; */
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    border-radius: 0.5em;
 }
 
 h3 {
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 0.5em;
+    font-size: 1.6em;
+}
+
+h4 {
+    margin-top: 2.5em;
 }
 
 p {
@@ -73,8 +92,9 @@ li {
 section {
     border-left: 1px solid black;
     padding-left: 1em;
-    margin-top: 3em;
+    margin-top: 7em;
     margin-left: 1em;
+    padding-right:1em;
 }
 
 .skill {
@@ -83,10 +103,48 @@ section {
     background-color: blue;
     border-radius: 100rem;
     padding: 5px 10px;
-    margin-right: 0.3em;
+    margin-right: 0.1em;
     margin-bottom: 0.3em;
 }
 
 img {
     max-width: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+  
+a:hover {
+    text-decoration: underline; 
+    color: #004466; /* Change color on hover */
+}
+
+#navtop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items : stretch;
+    width: 100%;
+}
+#navtop > * {
+    flex: 1; 
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    border-radius: 0.5em;
+    align-items: center;
+}
+
+#nav > *:hover {
+    background-color: #e6e6e6;
+    text-decoration: none; 
 }

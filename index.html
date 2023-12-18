@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="assets/logo-me.svg" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Antoine Bugeat</title>
   <link rel="stylesheet" href="style.css">
@@ -10,20 +11,33 @@
 
 <body>
 
-  <header>
+  <div id = "home"><header>
     <img id="profilepic" src="assets/me.png" alt="Profile Picture">
     <div class="text-container">
       <h1>Antoine <b>Bugeat</b></h1>
+      bugeatantoine@gmail.com | <a href="assets/CVAntoineBuget2023.pdf" download="CVAntoineBuget2023" target = "_blank">Resume</a>
+      <br><br>
       <p>PhD-Engineer and Developer skilled in urban physics, sustainability, and computational design, with a growing focus on web development and Three.js. Passionate about creating simple solutions to complex problems.</p>
     </div>
   </header>
 
+  <div id="navtop">
+
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#side-projects">SIDE PROJECTS</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#skills">SKILLS</a>
+
+  </div>
 
   <section id="info">
     <p>
-      <a href="mailto:bugeatantoine@gmail.com">bugeatantoine@gmail.com</a>
+      <!-- <a href="mailto:bugeatantoine@gmail.com">bugeatantoine@gmail.com</a>
       <br>
       <br>
+      bugeatantoine@gmail.com | <a href="assets/CVAntoineBuget2023.pdf" download="CVAntoineBuget2023" target = "_blank">Resume</a>
+      <br>
+      <br> -->
       <a href="https://linkedin.com/in/antoine-bugeat-452167123" target="_blank">LinkedIn</a><br>
 
       <a href="https://github.com/abugeat" target="_blank">GitHub</a><br>
@@ -32,18 +46,19 @@
       
       <br>
       <br>
-      Born in France (29/01/1994)<br>
+      Born in France <br> <!-- (29/01/1994)-->
       Currently living in Vienna<br>
       <br>
       Fluent in French and English<br>
       Basic Spanish with notions in German<br>
-      <br>
+      <!-- <br>
       Pazmanitengasse 12, Top 24<br>
       1020 Wien, Austria<br>
       <br>
-      +43 (0)660 2019792<br>
+      +43 (0)660 2019792<br> -->
     </p>
   </section>
+  </div>
   
 
   <section id="experience">
@@ -52,65 +67,197 @@
     <article>
       <h3>Computational Design Developer</h3>
       
-      <p>
+      <p><i>
         Strabag, SID - Vienna, Austria
         <br>January 2021 to Present</p>
+      </p></i>
+
+      <p>
+        I develop tools based on optimization and parametric techniques to help architects, engineers and designers make the best design decisions. The tools made by our interdisciplinary team are used by the different departments of the company: real estate, architecture, structural engineering, MEP engineering, etc.
       </p>
 
-      <ul>
-        <li>Develop tools for architects, engineers, and designers</li>
-        <li>Mainly Web applications and Rhino/GH plugins</li>
-        <li>Lead projects including GD Excavation Pit, GD Parking Layout, GD Structure, GD Toolkit, GD Earthworks</li>
-        <!-- Add details of each project as needed -->
-      </ul>
+      <p>
+        <h4>GD Excavation Pit</h4>
+
+        <video width="100%" controls>
+          <source src="assets/gdexcavationpit.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <p>Tool for designing excavation pit walls in both parametric and generative modes. The parametric mode offers a quick assessment of costs, CO2 impact, and structural feedback. Meanwhile, the generative mode employs optimization technics, delivering automatic and efficient design alternatives.</p>
+        
+        <span class="skill">Python</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Eel</span>
+        <span class="skill">plotly</span>
+        <span class="skill">Azure AD auth</span>
+        <span class="skill">Optimization algorithms</span>
+        <span class="skill">Parametric design</span>
+        <span class="skill">Generative design</span>
+        <span class="skill">Data visualisation</span>
+        <span class="skill">Git</span>
+
+      </p>
+
+      <p>
+        <h4>GD Parking Layout</h4>
+        
+        <video controls>
+          <source src="assets/gdparkinglayout.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Tool for creating parking layouts through intuitive 'Smart Sketching.' Users can effortlessly sketch roads, and the tool will autonomously allocate parking slots while ensuring compliance with selected regulations. Additional feature includes Tractrix smart sketch. Available in two versions: Web application and Rhino/GH plugin.</p>
+
+        <p>For that purpose, I have developed a simplified CAD online-software using three.js in TypeScript. This enables users to interact seamlessly with fundamental CAD features, providing a user-friendly platform for designing all sorts of shapes.</p>
+
+        <span class="skill">Typescript</span>
+        <span class="skill">Three.js</span>
+        <span class="skill">Python</span>
+        <span class="skill">Shapely</span>
+        <span class="skill">Rhino/GH</span>
+        <span class="skill">Flask</span>
+        <span class="skill">Docker</span>
+        <span class="skill">Azure AD auth</span>
+        <span class="skill">Git</span>
+      </p>
+
+      <p>
+        <h4>Other projects and contributions</h4>
+        
+        <p>GD Structure, tool to quickly perfom structural simulation.</p>
+        <p>GD Toolkit, wrapper of several environmental tool (as laybug and honeybee)
+          to facilitate the connections with our other tools.</p>
+        <p>GD Earthworks, tool to generate project site topology to optimize earth
+          movement and ensure geotechnical compliance.</p>
+        
+        <span class="skill">C#</span>
+        <span class="skill">Python</span>
+        <span class="skill">Rhino/GH</span>
+        <span class="skill">Ladybug</span>
+        <span class="skill">Honeybee</span>
+        <span class="skill">NetworkX</span>
+        <span class="skill">Optimization algorithms</span>
+        <span class="skill">Git</span>  
+
+      </p>
     </article>
 
     <article>
       <h3>Sustainable Building Engineer</h3>
       
-      <p>
+      <p><i>
         Vizea Sud-Ouest - Bordeaux, France
         <br>March 2021 to December 2021
-      </p>
+      </p></i>
 
       <ul>
-        <li>Advised on environmental performance and occupant comfort</li>
+        <li>Advised on environmental performance and occupant comfort for
+          architects, engineers, and building owners</li>
         <li>Managed internal tool development and industry software maintenance</li>
       </ul>
+
+      <span class="skill">Environmental Engineering</span>
+      <span class="skill">Building Energy Simulation</span>
+      <span class="skill">Comfort Analysis</span>
+      <span class="skill">AutoCAD</span>
+      <span class="skill">Rhino/GH</span>
+
     </article>
 
     <article>
       <h3>Researcher on Radiation Simulation - PhD Candidate</h3>
       
-      <p>
+      <p><i>
         UPPA (Uni.) & UdelaR (Uni.) & NOBATEK/INEF4 (Research Center) - Anglet, France
         <br>October 2017 to December 2020
-        </p>
-      <ul>
+      </p></i>
+
+
+      <p>
+        <a href="assets/bugeat2020thesis.pdf" download="bugeat2020thesis" target = "_blank">Développement d’une méthode de radiosité pour l’étude du rayonnement solaire en milieu urbain</a>
+      </p>
+
+      <p>
+        This PhD thesis introduces an innovative simulation method for solar radiation in dense urban areas, enhancing accuracy by incorporating both diffuse and specular reflections through extended radiosity and view factors. The study demonstrates practical applications, addressing daylight scarcity through interventions like light wells and high-diffuse-reflectance materials. It also explores the impact of surface properties on solar gain in urban settings, emphasizing the method's efficiency in architectural design contexts.
+      </p>
+
+      <p>
+        I applied rendering techniques like radiosity, ray-tracing, and path-tracing to architecture and building engineering. I collaborated in a diverse, international team spanning France, Spain, Uruguay, and Belgium, involving expertise from Architecture, Physics, and Computer Science. Additionally, I enhanced my skills in code development and computer science during a two-month research fellowship at UdelaR's Computer Science Department.
+      </p>
+
+      <img src="assets/scales.png" alt="thesis-scales">
+
+      <br><br>
+      <span class="skill">C++</span>
+      <span class="skill">Matlab</span>
+      <span class="skill">RADIANCE</span>
+      <span class="skill">Embree-Intel API</span>
+      <span class="skill">Ray-tracing</span>
+      <span class="skill">Solar Radiation Simulation</span>
+      <span class="skill">Daylight Simulation</span>
+      <span class="skill">Object-Oriented Programming (OOP)</span>
+      <span class="skill">Computer Science Basics</span>
+
+      <h4>
+        Publications during my PhD thesis:
+      </h4>
+
+      <p>
+        <b>Bugeat, A.</b>, Beckers, B., & Fernández, E. (2020). <a href="https://doi.org/10.1016/j.solener.2020.07.099" target="_blank">Improving the daylighting performance of residential light wells by reflecting and redirecting approaches.</a> Solar Energy, 207, 1434-1444.
+      </p>
+      <img src="assets/lightwells.png" alt="light wells">
+      <br><br>
+
+      <p>
+        Garcia-Nevado, E., Duport, N., <b>Bugeat, A.</b>, & Beckers, B. (2021). <a href="https://doi.org/10.1016/j.buildenv.2020.107403" target="_blank">Benefits of street sun sails to limit building cooling needs in a mediterranean city.</a> Building and Environment, 187, 107403.
+      </p>
+      <img src="assets/temperature.gif" alt="temperature and solar gains">
+      <br>
+
+
+      <p>
+        <b>Bugeat, A.</b>, Fernández, E., Beckers, B., & Aguerre, J. (2019). <a href="https://www.researchgate.net/publication/337007260_A_Multi-Scale_Consideration_of_Daylight_in_a_Real_Urban_Context" target="_blank">A multi-scale consideration of daylight in a real urban context.</a> In IBPSA conference, Rome.
+      </p>  
+
+      <p>
+        Garcia-Nevado, E., <b>Bugeat, A.</b>, Fernández, E., & Beckers, B. (2020). <a href="https://www.researchgate.net/publication/345240240_Using_textile_canopy_shadings_to_decrease_street_solar_loads" target="_blank">Using textile canopy shadings to decrease street solar loads.</a>  In PLEA 2020—35th conference on passive and low energy architecture. A Coruña, Spain.
+      </p>
+      <!-- <ul>
         <li>Developed a radiosity model for the study of solar radiation in urban areas</li>
         <li>Collaborated in an international and multidisciplinary team</li>
         <li>Two-month research fellow at UdelaR – Computer Science Department</li>
-      </ul>
+      </ul> -->
+
       <!-- include gif -->
-      <img src="assets/temperature.gif" alt="temperature and solar gains">
 
     </article>
 
     <article>
       <h3>Assistant Sustainable Building Engineer</h3>
-      <p>NOBATEK/INEF4 – April to August 2017 – Anglet, France</p>
+      
+      <p><i>
+        NOBATEK/INEF4 - Anglet, France
+        <br>April to August 2017
+      </p></i>
+      
       <ul>
         <li>Contributed to design and environmental certification studies</li>
         <li>Monitored regulations, certifications, and daylighting simulation tools</li>
       </ul>
+
+      <span class="skill">Environmental Engineering</span>
+      <span class="skill">Daylighting</span>
+      <span class="skill">RADIANCE</span>
+      <span class="skill">Rhino/GH</span>
+      
     </article>
   </section>
-
 
   
   <section id="side-projects">
     <h2>SIDE PROJECTS</h2>
 
+    <br>
     <ul>
       <li>
         <a href="https://abugeat.github.io/SkyViewFactor-three/" target="_blank">SkyViewFactor-three</a> 
@@ -149,12 +296,14 @@
   </section>
 
 
-
   <section id="education">
     <h2>EDUCATION</h2>
 
     <article>
       <h3>PhD - Urban Physics</h3>
+      <p>
+        <a href="assets/bugeat2020thesis.pdf" download="bugeat2020thesis" target = "_blank">Développement d’une méthode de radiosité pour l’étude du rayonnement solaire en milieu urbain</a>
+      </p>
       <p>
         December 2020
         <br>Architecture & Urban Physics
@@ -190,7 +339,6 @@
   </section>
 
 
-  
   <section id="skills">
     <h2>SKILLS</h2>
 
@@ -241,14 +389,14 @@
       <ul>
         <li><span class="skill">RADIANCE</span></li>
         <li><span class="skill">Self-made softwares</span></li>
-        <li><span class="skill">Ladybug / Honeybee</span></li>
+        <li><span class="skill">Ladybug</span> <span class="skill">Honeybee</span></li>
       </ul>
     </article>
 
     <article>
       <h3>2D and 3D</h3>
       <ul>
-        <li><span class="skill">Three.JS</span></li>
+        <li><span class="skill">Three.js</span></li>
         <li><span class="skill">Rhino 3D</span> <span class="skill">Grasshopper</span></li>
         <li><span class="skill">Blender</span></li>
         <li><span class="skill">Sketchup</span></li>
